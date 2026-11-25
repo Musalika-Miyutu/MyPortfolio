@@ -450,6 +450,79 @@ h2 {
     border-top: 1px dashed var(--border-highlight);
 }
 
+/* Project Action Buttons (Live Domains & GitHub Repos) */
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.proj-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.btn-icon {
+    font-size: 0.9rem;
+    line-height: 1;
+}
+
+.btn-live {
+    background: rgba(52, 211, 153, 0.14);
+    color: var(--emerald);
+    border: 1px solid rgba(52, 211, 153, 0.4);
+}
+
+.btn-live:hover {
+    background: var(--emerald);
+    color: #090d16;
+    box-shadow: 0 0 18px rgba(52, 211, 153, 0.35);
+    transform: translateY(-2px);
+}
+
+.btn-repo {
+    background: rgba(129, 140, 248, 0.12);
+    color: #c7d2fe;
+    border: 1px solid rgba(129, 140, 248, 0.35);
+}
+
+.btn-repo:hover {
+    background: var(--brand);
+    color: #090d16;
+    box-shadow: 0 0 18px var(--brand-glow);
+    transform: translateY(-2px);
+}
+
+.proj-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    padding: 7px 12px;
+    border-radius: 8px;
+    background: rgba(148, 163, 184, 0.08);
+    border: 1px solid var(--border-subtle);
+}
+
+.status-dot-amber {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--amber);
+    box-shadow: 0 0 8px var(--amber);
+}
+
 .tag {
     font-family: var(--font-mono);
     font-size: 0.74rem;
